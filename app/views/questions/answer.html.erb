@@ -1,0 +1,11 @@
+<h1><strong>Stupid Coaching</strong></h1>
+<%= if @question.include?("?")
+      " Silly question, get dressed and go to work!"
+    elsif @question == "I am going to work"
+      "Great!"
+    else
+      "I don't care, get dressed and go to work!"
+    end
+%>
+
+<%= link_to 'Ask a new question', '/ask' %>
